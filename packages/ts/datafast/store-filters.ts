@@ -3,7 +3,7 @@ import {Bytes} from "../common/collections";
 import {JSONValue} from "../common/value";
 
 export declare namespace StoreFilter {
-    function get(key: string): Bytes;
+    function get(key: string): Bytes | null;
     function set(key: string, value: Bytes): void;
     function remove(key: string): void;
 }
